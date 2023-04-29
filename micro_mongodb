@@ -1,0 +1,26 @@
+ 1  ls
+    2  cd microservices-k8s/
+    3  ls
+    4  cd flask-api/
+    5  ls
+    6  cd k8s/
+    7  ls
+    8  vi mango-pv.yml
+    9  vi mongo-pv.yml
+   10  kubectl create -f mongo-pv.yml
+   11  kubectl get pv
+   12  kubectl get pv mongo-pv
+   13  vi mongo-pv.yml
+   14  vi mongo-pvc.yml
+   15  kubectl create -f mongo-pvc.yml
+   16  kubectl get pv mongo-pv
+   17  ls
+   18  vi mango.yml
+   19  vi mongo.yml
+   20  kubectl apply -f mongo.yml
+   21  kubectl get pods
+   22  docker ps
+   23  ls
+   24  vi mongo-svc.yml
+   25  kubectl apply -f mongo-svc.yml
+   26  kubectl get svc
